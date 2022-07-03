@@ -23,3 +23,5 @@ function image() {
 }
 
 document.body.append(component(), image());
+
+console.log(process.env.API_KEY);
