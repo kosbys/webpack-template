@@ -1,4 +1,5 @@
 import './styles/style.scss';
+import Kingfisher from './images/kingfisher.avif';
 
 function component() {
   const element = document.createElement('div');
@@ -9,4 +10,11 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+function image() {
+  const img = document.createElement('img');
+  img.src = Kingfisher;
+
+  return img;
+}
+
+document.body.append(component(), image());
