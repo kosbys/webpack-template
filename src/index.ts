@@ -2,12 +2,17 @@ import './styles/style.scss';
 import Kingfisher from './images/kingfisher.avif';
 
 function component() {
-  const element = document.createElement('div');
-  element.classList.add('element');
-
+  const container = document.createElement('div');
+  container.classList.add('container');
+  const element = document.createElement('h4');
   element.textContent = 'Hello, World!';
+  const credit = document.createElement('a');
+  credit.innerHTML = 'Image Credits';
+  credit.href = 'https://unsplash.com/photos/vUNQaTtZeOo';
 
-  return element;
+  container.append(element, credit);
+
+  return container;
 }
 
 function image() {
